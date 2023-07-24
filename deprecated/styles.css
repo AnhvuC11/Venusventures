@@ -64,8 +64,8 @@
   .join-button:hover {
     opacity: 0.8;
     cursor: pointer;
-    background-color: #c934cb;
-    border-color: #c934cb;
+    background-color: #c9711e;
+    border-color: #c9711e;
   }
   
   .join-button:focus {
@@ -73,8 +73,8 @@
   }
   
   .join-button:active {
-    background-color: #c934cb;
-    border-color: #c934cb;
+    background-color: #c9711e;
+    border-color: #c9711e;
   }
   
   .join-button-cover {
@@ -87,7 +87,7 @@
     font-family: 'future_tense', sans-serif;
     font-size: 14px;
     color: white;
-    background: linear-gradient(to left, #c934cb, #a300a6);
+    background: linear-gradient(to left, #c9711e, #c9711e);
     border: none;
     border-radius: 50px;
     margin-right: 15px;
@@ -147,19 +147,19 @@
   }
   
   .login-button:hover {
-    color: #c934cb;
+    color: #c9711e;
   }
   
   .services-button:hover {
-    color: #c934cb;
+    color: #c9711e;
   }
   
   .pricing-button:hover {
-    color: #c934cb;
+    color: #c9711e;
   }
   
   .discord-button:hover {
-    color: #c934cb;
+    color: #c9711e;
   }
   
   .body-text {
@@ -212,8 +212,8 @@
   .join-button-body:hover {
     opacity: 0.8;
     cursor: pointer;
-    background-color: #c934cb;
-    border-color: #c934cb;
+    background-color: #c9711e;
+    border-color: #c9711e;
   }
   
   .join-button-body:focus {
@@ -221,8 +221,8 @@
   }
   
   .join-button-body:active {
-    background-color: #c934cb;
-    border-color: #c934cb;
+    background-color: #c9711e;
+    border-color: #c9711e;
   }
   
   .join-button-cover-body {
@@ -234,7 +234,7 @@
     font-family: 'future_tense', sans-serif;
     font-size: 14px;
     color: white;
-    background: linear-gradient(to left, #c934cb, #a300a6);
+    background: linear-gradient(to left, #c9711e, #c9711e);
     border: none;
     border-radius: 50px;
     margin-right: 15px;

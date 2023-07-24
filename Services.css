@@ -1,0 +1,587 @@
+@font-face {
+  font-family: 'future_tense';
+  src: url('assets/fonts/future_tense.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #181818;
+}
+
+#globe-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #181818;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  padding: 25px 50px 35px;
+  font-family: 'future_tense', sans-serif;
+  color: white;
+  border-bottom: 2px solid lightgrey;
+}
+
+.header-text {
+  display: inline-block;
+  margin: 0;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+/* JOIN BUTTON WITH GRADIENT BORDER */
+
+.join-button {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
+  padding: 14px 32px;
+  font-family: 'future_tense', sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #181818;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-right: 15px;
+  z-index: 2;
+}
+
+.join-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: #c9711e;
+  border-color: #c9711e;
+}
+
+.join-button:focus {
+  outline: none;
+}
+
+.join-button:active {
+  background-color: #c9711e;
+  border-color: #c9711e;
+}
+
+.join-button-cover {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  padding: 17px 35px;
+  font-family: 'future_tense', sans-serif;
+  font-size: 14px;
+  color: white;
+  background: linear-gradient(to left, #c9711e, #c9711e);
+  border: none;
+  border-radius: 50px;
+  margin-right: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.join-button-cover:hover {
+  opacity: 0.8;
+}
+
+/* JOIN BUTTON WITH GRADIENT BORDER */
+
+*[data-animation="ripple"] {
+  cursor: pointer;
+}
+
+*[data-animation="ripple"]:focus {
+  outline: none;
+}
+
+*[data-animation="ripple"]::selection {
+  background: transparent;
+  pointer-events: none;
+}
+
+.login-button {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  right: 460px;
+  top: 50px;
+}
+
+.back-button {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  right: 600px;
+  top: 50px;
+}
+
+
+.discord-button {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  right: 730px;
+  top: 50px;
+}
+
+.login-button:hover {
+  color: #c9711e;
+}
+
+.back-button:hover {
+  color: #c9711e;
+}
+
+
+
+.discord-button:hover {
+  color: #c9711e;
+}
+
+.body-text {
+  position: absolute;
+  color: white;
+  font-family: 'future_tense', sans-serif;
+  font-size: 80px;
+  top: 170px;
+  left: 60px;
+
+}
+
+.body-text-note {
+  position: absolute;
+  color: white;
+  font-family: 'future_tense', sans-serif;
+  font-size: 30px;
+  top: 410px;
+  left: 60px;
+}
+
+.body-text-note2 {
+  position: absolute;
+  color: white;
+  font-family: 'future_tense', sans-serif;
+  font-size: 30px;
+  top: 475px;
+  left: 60px;
+}
+
+
+/* JOIN BUTTON WITH GRADIENT BORDER BODY */
+
+.join-button-body {
+  position: absolute;
+  left: 62px;
+  top: 650px;
+  transform: translateY(-50%);
+  padding: 19px 62px;
+  font-family: 'future_tense', sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #181818;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-right: 15px;
+  z-index: 2;
+}
+
+.join-button-body:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: #c9711e;
+  border-color: #c9711e;
+}
+
+.join-button-body:focus {
+  outline: none;
+}
+
+.join-button-body:active {
+  background-color: #c9711e;
+  border-color: #c9711e;
+}
+
+.join-button-cover-body {
+  left: 60px;
+  top: 650px;
+  position: absolute;
+  transform: translateY(-50%);
+  padding: 22px 65px;
+  font-family: 'future_tense', sans-serif;
+  font-size: 14px;
+  color: white;
+  background: linear-gradient(to left, #c9711e, #c9711e);
+  border: none;
+  border-radius: 50px;
+  margin-right: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.join-button-cover-body:hover {
+  opacity: 0.8;
+}
+
+.pack-container {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(3px);
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 1.6rem;
+  color: #fff;
+  box-shadow: 0 4px 6px -1px transparent, 0 2px 4px -2px transparent;
+  border-radius: 12px; /* Add rounded corners to the pack-container */
+}
+
+.header {
+  position: relative;
+  margin: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.price-container span:first-child {
+  margin-top: 10px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.price-container span:last-child {
+  align-self: flex-end;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list span {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.185);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list span svg {
+  height: 12px;
+  width: 12px;
+}
+
+.list p {
+  display: block;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.button-container {
+  margin-top: 10px;
+  margin-left: 225px;
+  padding: 10;
+  text-align: 0auto;
+}
+
+.button-container button {
+  display: inline-block; /* Use 'inline-block' to make the button expand based on content */
+  background-color: transparent;
+  padding: 15px 60px; /* Increase padding to make the button longer */
+  text-transform: uppercase;
+  color: #c9711e;
+  outline: 0;
+  border: 2px solid;
+  border-radius: 200px; /* Add rounded corners to the button */
+  transition: color 0.2s; /* Add a transition effect for the color change */
+}
+
+.button-container button:hover {
+  color: #ffffff;
+}
+
+
+.pack-container1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(3px);
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 1.6rem;
+  color: #fff;
+  box-shadow: 0 4px 6px -1px transparent, 0 2px 4px -2px transparent;
+  border-radius: 12px; /* Add rounded corners to the pack-container */
+}
+
+.header1 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.title1 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #fff
+}
+
+.price-container1 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.price-container1 span:first-child {
+  margin-top: 10px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.price-container1 span:last-child {
+  align-self: flex-end;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.lists1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list1 span {
+  border-radius: 500%;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.185);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list1 span svg {
+  height: 12px;
+  width: 12px;
+}
+
+.list1 p {
+  display: block;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.button-container1 {
+  margin-top: 10px;
+  margin-left: 25px; /* Adjust this value to move the button to the left */
+  padding: 10;
+  text-align: absolute; /* Center the button within the container */
+  display: flex; /* Use flexbox to center the button horizontally */
+  justify-content: center; /* Center the button horizontally */
+}
+
+.button-container1 button {
+  display: inline-block; /* Use 'inline-block' to make the button expand based on content */
+  background-color: transparent;
+  padding: 15px 60px; /* Increase padding to make the button longer */
+  text-transform: uppercase;
+  color: #c9711e;
+  outline: 0;
+  border: 2px solid;
+  border-radius: 200px; /* Add rounded corners to the button */
+  transition: color 0.2s; /* Add a transition effect for the color change */
+}
+
+.button-container1 button:hover {
+  color: #ffffff;
+}
+
+
+.pack-container2 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(3px);
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 1.6rem;
+  color: #fff;
+  box-shadow: 0 4px 6px -1px transparent, 0 2px 4px -2px transparent;
+  border-radius: 12px; /* Add rounded corners to the pack-container2 */
+}
+
+.header2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.title2 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price-container2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.price-container2 span:first-child {
+  margin-top: 10px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.price-container2 span:last-child {
+  align-self: flex-end;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.lists2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list2 span {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.185);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list2 span svg {
+  height: 12px;
+  width: 12px;
+}
+
+.list2 p {
+  display: block;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.button-container2 {
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 10;
+  text-align: center; /* Center the button within the container */
+}
+
+.button-container2 button {
+  display: inline-block; /* Use 'inline-block' to make the button expand based on content */
+  background-color: transparent;
+  padding: 15px 60px; /* Increase padding to make the button longer */
+  text-transform: uppercase;
+  color: #c9711e;
+  outline: 0;
+  border: 2px solid;
+  border-radius: 200px; /* Add rounded corners to the button */
+  transition: color 0.2s; /* Add a transition effect for the color change */
+}
+
+.button-container2 button:hover {
+  color: #ffffff;
+}

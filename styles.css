@@ -32,7 +32,7 @@ body {
 header {
   position: relative;
   background-color: black;
-  padding: 35px 60px 45px;
+  padding: 25px 50px 35px;
   font-family: 'future_tense', sans-serif;
   color: white;
   border-bottom: 2px solid lightgrey;
@@ -67,8 +67,8 @@ header {
 .join-button:hover {
   opacity: 0.8;
   cursor: pointer;
-  background-color: #c934cb;
-  border-color: #c934cb;
+  background-color: #c9711e;
+  border-color: #c9711e;
 }
 
 .join-button:focus {
@@ -76,8 +76,8 @@ header {
 }
 
 .join-button:active {
-  background-color: #c934cb;
-  border-color: #c934cb;
+  background-color: #c9711e;
+  border-color: #c9711e;
 }
 
 .join-button-cover {
@@ -90,7 +90,7 @@ header {
   font-family: 'future_tense', sans-serif;
   font-size: 14px;
   color: white;
-  background: linear-gradient(to left, #c934cb, #a300a6);
+  background: linear-gradient(to left, #c9711e, #c9711e);
   border: none;
   border-radius: 50px;
   margin-right: 15px;
@@ -129,40 +129,33 @@ header {
   position: absolute;
   color: white;
   text-decoration: none;
-  right: 570px;
+  right: 560px;
   top: 50px;
 }
 
-.pricing-button {
-  position: absolute;
-  color: white;
-  text-decoration: none;
-  right: 770px;
-  top: 50px;
-}
 
 .discord-button {
   position: absolute;
   color: white;
   text-decoration: none;
-  right: 950px;
+  right: 750px;
   top: 50px;
-}
+}    
 
 .login-button:hover {
-  color: #c934cb;
+  color: #c9711e;
 }
 
 .services-button:hover {
-  color: #c934cb;
+  color: #c9711e;
 }
 
 .pricing-button:hover {
-  color: #c934cb;
+  color: #c9711e;
 }
 
 .discord-button:hover {
-  color: #c934cb;
+  color: #c9711e;
 }
 
 .body-text {
@@ -215,8 +208,8 @@ header {
 .join-button-body:hover {
   opacity: 0.8;
   cursor: pointer;
-  background-color: #c934cb;
-  border-color: #c934cb;
+  background-color: #c9711e;
+  border-color: #c9711e;
 }
 
 .join-button-body:focus {
@@ -224,8 +217,8 @@ header {
 }
 
 .join-button-body:active {
-  background-color: #c934cb;
-  border-color: #c934cb;
+  background-color: #c9711e;
+  border-color: #c9711e;
 }
 
 .join-button-cover-body {
@@ -237,7 +230,7 @@ header {
   font-family: 'future_tense', sans-serif;
   font-size: 14px;
   color: white;
-  background: linear-gradient(to left, #c934cb, #a300a6);
+  background: linear-gradient(to left, #c9711e, #c9711e);
   border: none;
   border-radius: 50px;
   margin-right: 15px;
@@ -289,10 +282,10 @@ header {
 }
 
 .join-button-body2:hover {
-  opacity: 0.8;
+  opacity: 0.8; 
   cursor: pointer;
-  background-color: #c934cb;
-  border-color: #c934cb;
+  background-color: #c9711e;
+  border-color: #c9711e;
 }
 
 .join-button-body2:focus {
@@ -300,8 +293,8 @@ header {
 }
 
 .join-button-body2:active {
-  background-color: #c934cb;
-  border-color: #c934cb;
+  background-color: #c9711e;
+  border-color: #c9711e;
 }
 
 .join-button-cover-body2 {
@@ -313,7 +306,7 @@ header {
   font-family: 'future_tense', sans-serif;
   font-size: 14px;
   color: white;
-  background: linear-gradient(to left, #c934cb, #a300a6);
+  background: linear-gradient(to left, #c9711e, #c9711e);
   border: none;
   border-radius: 50px;
   margin-right: 15px;
